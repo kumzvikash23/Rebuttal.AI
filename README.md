@@ -34,6 +34,24 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 **Note**: Without Supabase, the app will still work but won't save speech history.
 
+### 3. Deployment to Vercel
+
+1. **Push to GitHub**: 
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **Deploy on Vercel**:
+   - Connect your GitHub repository to Vercel
+   - Vercel will automatically detect Next.js and deploy
+   - Add environment variables in Vercel dashboard if using Supabase
+
+3. **Environment Variables for Vercel** (Optional):
+   - `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase anonymous key
+
 ### 3. Install Dependencies
 
 ```bash
